@@ -1,0 +1,40 @@
+.beneficios h2{
+    position: relative;
+    margin: 30px 0px;
+    margin-left: 30px;
+    font-size: 2.25rem;
+}
+
+.beneficios h2::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background-color: var(--cor-rosa-escuro);
+    width: 23px;
+    top:0px;
+    height: 5px;
+}
+
+/*
+.beneficios h3{
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.beneficios p{
+    margin-left: 40px;  
+    margin-bottom: 30px;  
+} */
+
+.beneficios li{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    margin-left: 30px;
+    gap: 10px;
+}
+
+.beneficios p{
+    grid-column: 2;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    --cor-fundo: #f4f4f4;
+    --cor-fundo-secundaria: #EFDCEC;
+    --cor-primaria-texto: #050505;
+    --cor-secundaria-texto: #444;
+    --cor-rosa-escuro: #C0A;
+}
+
+body{
+    width: 100%;
+    font-family: "roboto";
+    color: var(--cor-primaria-texto);
+    background-color: var(--cor-fundo);
+}
