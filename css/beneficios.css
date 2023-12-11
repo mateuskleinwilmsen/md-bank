@@ -10,10 +10,21 @@
     z-index: -1;
     position: absolute;
     background-color: var(--cor-rosa-escuro);
-    width: 23px;
+    width: 22px;
     top:0px;
     height: 5px;
 }
+
+/* .beneficios h2::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background-color: var(--cor-azul-escuro);
+    width: 15px;
+    left: 155px;
+    bottom: 0px;
+    height: 5px;
+} */
 
 /*
 .beneficios h3{
