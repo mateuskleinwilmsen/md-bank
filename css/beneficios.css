@@ -1,8 +1,22 @@
+.beneficios {
+    margin-bottom: 30px;
+}
+
 .beneficios h2{
     position: relative;
-    margin: 30px 0px;
+    margin: 60px 0px;
+    margin-bottom: 40px;
     margin-left: 30px;
     font-size: 2.25rem;
+    /* text-decoration: underline;
+    text-decoration-color: var(--cor-rosa-escuro);
+    text-decoration-thickness: 5px; */
+}
+
+.beneficios h2 u{
+    text-decoration: underline;
+    text-decoration-color: var(--cor-rosa-escuro);
+    text-decoration-thickness: 5px;
 }
 
 .beneficios h2::before{
@@ -11,8 +25,17 @@
     position: absolute;
     background-color: var(--cor-rosa-escuro);
     width: 22px;
-    top:0px;
+    bottom:0px;
     height: 5px;
+}
+
+.beneficios h2 span{
+    color: var(--cor-rosa-escuro);
+}
+
+.beneficios strong{
+    font-weight: 500;
+    color: var(--cor-primaria-texto);
 }
 
 /* .beneficios h2::after{
@@ -46,14 +69,17 @@
 }
 
 .beneficios p{
+    color: var(--cor-secundaria-texto);
     grid-column: 2;
     margin-bottom: 30px;
     padding-right: 20px;
+    line-height: 150%;
 }
 
-@media (min-width:1200px) {
+@media (min-width:1000px) {
     .beneficios ul{
         display: grid;
+        gap: 10px;
         grid-template-columns: 1fr 1fr;
     }
 }
