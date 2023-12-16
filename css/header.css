@@ -18,7 +18,21 @@ header > h1 span{
     color: #CC00AA;
 }
 
+header h1{
+    margin-left: 20px;
+}
+
 header .material-symbols-outlined{
     font-size: 2.75rem;
     cursor: pointer;
+    margin-right: 20px;
+}
+
+@media (min-width:1200px) {
+    header h1{
+        margin-left: 60px;
+    }
+    header .material-symbols-outlined{   
+        margin-right: 60px;
+    }
 }
