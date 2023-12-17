@@ -1,6 +1,9 @@
-.apresentacao {
-    padding-bottom: 40px;
+.apresentacao{
     background-image: radial-gradient(var(--cor-fundo), var(--cor-fundo-secundaria));
+}
+
+.apresentacao > div {
+    padding-bottom: 40px;
     /* padding-top: 125px; */
     padding-top: 145px;
 }
@@ -34,13 +37,15 @@
 
 .apresentacao p {
     color: var(--cor-secundaria-texto);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     width: 75%;
     margin: 40px auto;
 }
 
 .apresentacao a {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
     text-decoration: none;
     background-color: var(--cor-rosa-escuro);
     color: white;
@@ -50,14 +55,16 @@
     border-radius: 10px;
     text-align: center;
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 @media (min-width:1000px) {
-    .apresentacao{
+    .apresentacao > div{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-bottom: 60px;
+        padding-bottom: 100px;
+        padding-top: 185px;
         height: 350px;
         align-items: center;
     }
