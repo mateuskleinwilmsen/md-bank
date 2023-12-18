@@ -2,17 +2,34 @@
     margin: 60px 0px;
 }
 
+.compartilhados > .container > div{
+    display: grid;
+}
+
 .compartilhados-info{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    text-align: right;
+    text-align: left;
     padding: 0px 30px;
 }
 
-.compartilhados-info h2{
+.compartilhados-info:nth-child(even){
+    text-align: left;
+}
+
+.compartilhados h2{
     font-size: 2.5rem;
+    margin-left: 30px;
     margin-bottom: 40px;
+    position: relative;
+}
+
+.compartilhados h2::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background-color: var(--cor-rosa-escuro);
+    width: 22px;
+    bottom:0px;
+    height: 5px;
 }
 
 .compartilhados p{
@@ -20,13 +37,38 @@
     line-height: 1.4;
 }
 
+.compartilhados-img{
+    margin: auto;
+    margin: 60px auto;
+}
+
+.compartilhados-img:nth-child(3){
+    grid-row: 4;
+}
+
 @media (min-width:1000px) {
     .compartilhados-info{
         padding-right: 0px;
+        text-align: right;
     }
-    .compartilhados > div{
+
+    .compartilhados-img:nth-child(3){
+        grid-row: auto;
+    }
+
+    .compartilhados-info:nth-child(even){
+        padding-left: 0px;
+    }
+    .compartilhados > .container > div{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 40px 10px;
+    }
+
+    .compartilhados-img{
+        margin: auto;
+        padding: 20px 0px;
     }
 
     .compartilhados p{
