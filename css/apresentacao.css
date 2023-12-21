@@ -57,11 +57,12 @@
     margin: 0 auto;
     font-size: 1.2rem;
     font-weight: 500;
+    background-image: linear-gradient(0deg, #b80099, transparent);
 }
 
 .apresentacao a:hover{
     background-color: #b9009a;
-    color: #eee;
+    background-image: none;
 }
 
 @media (min-width:1000px) {
