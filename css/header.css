@@ -16,7 +16,12 @@ header > div{
     
 }
 
-header  h1 > span{
+header h1 > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header  h1 > a > span{
     color: #CC00AA;
 }
 
@@ -24,6 +29,7 @@ header h1{
     user-select: none;
     margin-left: 20px;
 }
+
 
 .header-menu-pc{
     display: none;
