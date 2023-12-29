@@ -47,6 +47,8 @@ header .material-symbols-outlined{
 
 @media (min-width:1000px) {
     .header-btn-pc{
+        font-family: "roboto";
+        font-weight: 500;
         display: flex;
     }
 
