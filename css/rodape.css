@@ -1,0 +1,42 @@
+
+.rodape{
+    background-color: var(--cor-primaria-texto);
+    color: var(--cor-fundo-secundaria);
+    padding-top: 70px;
+}
+
+.rodape > div > div{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.rodape > div > p{
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.rodape > div > div{
+    margin-bottom: 60px;
+}
+
+.rodape h2{
+    font-family: 'Righteous', sans-serif;
+    font-size: 2rem;
+}
+
+.rodape a{
+    color: var(--cor-fundo-secundaria);
+    font-weight: 600;
+}
+
+@media (min-width:700px) {
+    .rodape > div > div{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 0px;
+    }
+}
