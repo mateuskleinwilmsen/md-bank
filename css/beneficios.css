@@ -48,7 +48,11 @@
     align-items: center;
     grid-template-columns: auto 1fr;
     margin-left: 30px;
-    gap: 10px;
+    gap: 10px 5px;
+}
+
+.beneficios img{
+    transform: translateY(-1px);
 }
 
 .beneficios p{
