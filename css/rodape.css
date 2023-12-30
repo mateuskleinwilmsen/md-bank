@@ -33,10 +33,17 @@
     font-weight: 600;
 }
 
+.rodape p{
+    padding: 0px 20px;
+}
+
 @media (min-width:700px) {
     .rodape > div > div{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
         gap: 0px;
+    }
+    .rodape p{
+        padding: 0px;
     }
 }
