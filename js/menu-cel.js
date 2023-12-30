@@ -34,8 +34,16 @@ function abrirMenu(){
 }
 
 addEventListener("resize", () => {
+    let width = window.innerWidth;
+
     menuFundo.style.display = "none";
     menuItens.style.marginRight = "-230px";
-    menuBtnFechar.style.display = "none";
-    menuBtnAbrir.style.display = "block";
+
+    if(width>=1000){
+        menuBtnFechar.style.display = "none";
+        menuBtnAbrir.style.display = "none";
+    }else{
+        menuBtnFechar.style.display = "none";
+        menuBtnAbrir.style.display = "block";  
+    }
 });
