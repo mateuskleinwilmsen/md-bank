@@ -1,0 +1,90 @@
+
+
+.menu-cel-btn{
+    position: fixed;
+    z-index: 3;
+    right: 0px;
+    top: 14px;
+    user-select: none;
+}
+
+.menu-cel-btn span{
+    font-size: 2.75rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.menu-cel-btn-fechar span{
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* .menu-cel-itens::after{
+    top: 0px;
+    left: calc(0px - (100vw - 230px));
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: calc(100vw - 230px);
+    background-color: rgba(0, 0, 0, 0.35);
+} */
+
+.menu-cel-fundo{
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.menu-cel-itens{
+    display: none;
+    top: 0px;
+    padding-top: 79px;
+    right: 0px;
+    height: 100%;
+    width: 230px;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    margin-right: -230px;
+    transition: all 0.15s;
+}
+
+.menu-cel-itens li{
+    margin: 10px 0px;
+    list-style-type: none;
+}
+
+.menu-cel-itens a{
+    display: inline-block;
+    padding: 10px 0px;
+    width: 100%;
+    font-family: "roboto";
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--cor-primaria-texto);
+}
+
+.menu-cel-btn-fechar{
+    display: none;
+}
+
+@media (min-width:1000px) {
+    .menu-cel-btn{   
+        display: none;
+    }
+
+    .menu-cel-itens{
+        display: none;
+    }
+
+    .menu-cel-fundo{
+        display: none;
+    }
+}

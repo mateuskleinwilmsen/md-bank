@@ -12,27 +12,34 @@
     <header>
         <div class="container">
             <h1><a href="./index.html"><span>MD</span>Bank</a></h1>
+            
             <ul class="header-menu-pc">
                 <li><a href="#">Suporte</a></li>
                 <li><a href="#">benefícios</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
+
             <div class="header-btn-pc">
                 <a href="#">Entrar</a>
                 <a href="#">Abrir conta</a>
             </div>
         </div>
-    
-</header>
-<div class="menu-cel" onclick="abrirMenu()">
-    <span class="material-symbols-outlined">drag_handle</span>
-</div>
-<div class="menu-cel-itens">
-        <ul>
-            <li><a href="#">Suporte</a></li>
-            <li><a href="#">benefícios</a></li>
-            <li><a href="#">Blog</a></li>
-        </ul>
+    </header>
+    <div class="menu-cel">
+        <div class="menu-cel-fundo" onclick="fecharMenu()"></div>
+        <div class="menu-cel-btn menu-cel-btn-abrir" onclick="abrirMenu()">
+            <span class="material-symbols-outlined">drag_handle</span>
+        </div>
+        <div class="menu-cel-btn menu-cel-btn-fechar" onclick="fecharMenu()">
+            <span class="material-symbols-outlined">close</span>
+        </div>
+        <div class="menu-cel-itens">            
+            <ul>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">benefícios</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
     </div>
     <div class="apresentacao">
         <div class="container">
