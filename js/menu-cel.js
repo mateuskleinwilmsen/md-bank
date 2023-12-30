@@ -8,7 +8,6 @@ const menuBtnFechar = document.querySelector(".menu-cel-btn-fechar");
 menuBtnFechar.style.display = "none";
 
 const menuBtnAbrir = document.querySelector(".menu-cel-btn-abrir");
-menuBtnAbrir.style.display = "block";
 
 function fecharMenu(){
     if(menuFundo.style.display == "block"){
